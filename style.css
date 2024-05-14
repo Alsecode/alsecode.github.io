@@ -1,8 +1,10 @@
 :root {
 	--botticelli: #dae6ec;
   --blue-ribbon: #005cff;
+	--black: #000000;
 	--height: 28px;
 	--width: 48px;
+	--border-radius: 20px;
 }
 
 * {
@@ -53,7 +55,7 @@ body {
 
 	vertical-align: top;
 
-  border-radius: 30% / 50%;
+  border-radius: var(--border-radius);
   background: var(--botticelli);
   transition: 0.2s;
 }
@@ -69,7 +71,7 @@ body {
 
 	content: "";
 
-  border-radius: 50%;
+  border-radius: var(--border-radius);
   background: white;
   transition: 0.15s;
 }
@@ -82,7 +84,13 @@ body {
   height: var(--height);
   text-align: center;
 
-  border-radius: 30% / 50%;
+	outline: 0;
+	border: 1px solid var(--black);
+  border-radius: var(--border-radius);
+}
+
+.controls__input:focus {
+	border: 2px solid var(--blue-ribbon);
 }
 
 .controls__input--hidden {
