@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="progress/style.css">
+  <link rel="stylesheet" href="style.css">
+  <title>ProgressBlock</title>
+</head>
+
+<body>
+
+  <div class="app">
+    <div class="progress" data-radius="40" data-size="200"></div>
+
+    <div class="controls">
+      <label class="controls__label" for="valueInput">
+        <input type="number" class="controls__input" id="valueInput" min="0" max="100" value="0">
+        Value
+      </label>
+
+      <label class="controls__label" for="animateCheckbox">
+        <input type="checkbox" class="controls__input controls__input--hidden" id="animateCheckbox">
+        <span class="controls__checkbox-switch"></span>
+        Animate
+      </label>
+
+      <label class="controls__label" for="hideCheckbox">
+        <input type="checkbox" class="controls__input controls__input--hidden" id="hideCheckbox">
+        <span class="controls__checkbox-switch"></span>
+        Hide
+      </label>
+    </div>
+  </div>
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
